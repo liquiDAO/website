@@ -39,15 +39,15 @@ function JoinUs(){
                 <p  className='join-us__bigtitle'>How it works</p>
                 <div className='work-block'>
                     <div  className='work-block__item'>
-                        <img src={iconfinderAsset1} className='work-block_img'/>
+                        <img alt="work" src={iconfinderAsset1} className='work-block_img'/>
                         <p className='work-block__item__text'>LiquiDAO enables a seamless and interoperable ecosystem of Bitcoin-enabled financial applications.</p>
                     </div>
                     <div  className='work-block__item'>
-                        <img src={iconfinderAsset2}  className='work-block_img'/>
+                        <img alt="work" src={iconfinderAsset2}  className='work-block_img'/>
                         <p className='work-block__item__text'>Using Bitcoin and Liquid Network, LiquiDAO aggregates and deploys financial liquadity into trust-minimised, non custodial trading services via Discreet Log Contracts, Hashed Time-Locked Collateral Contracts, Multisignatures, and atomic swaps.</p>
                     </div>
                     <div  className='work-block__item'>
-                        <img src={iconfinderAsset}  className='work-block_img'/>
+                        <img alt="work" src={iconfinderAsset}  className='work-block_img'/>
                         <p className='work-block__item__text'>This empowers everyone to opt into a parallel, permissionless, and confidential financial infrastructure independent from trusted parties.</p>
                     </div>
                 </div>

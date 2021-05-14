@@ -3,8 +3,6 @@ import './../scss/navbar.scss';
 import { Link } from 'react-router-dom';
 import Logo from './../assets/images/logo.png';
 
-import { ReactComponent as Path1 } from './../assets/images/menuWave.svg';
-
 // illustrationWelcome
 // import { connect } from 'react-redux';
 // import { getFilteredApartments } from '../../redux/filter/filter.actions';
