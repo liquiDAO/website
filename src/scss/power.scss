@@ -1,0 +1,61 @@
+.Powered{
+    // background-color: linear-gradient(to bottom, #ba00ff, #8e14df, #6517bd, #3e149b, #160e78);
+    background: url("./../assets/images/stars.svg");
+    background-position: center center;
+    background-size: cover;
+    padding-top: 200px;
+    box-sizing: border-box;
+    // min-height: 500px;
+    // padding-left: 100px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    &__content{
+        max-width: 580px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 15px;
+        padding-right: 25px;
+        box-sizing: border-box;
+        z-index: 3;
+        @media(min-width:910px){
+            left: 100px;
+        }
+        @media (min-width:500) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__grafic{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.PoweredBG{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.planet7{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    right: 15%;
+    top: 6%;
+    animation: planet 1.8s  ease-in-out alternate-reverse infinite;
+    animation-duration: -6s;
+}
+
+.planet8{
+    position: absolute;
+    height: auto;
+    width: 12%;
+    right: 29%;
+    top: 42%;
+    animation: planet 1.2s  ease-in-out alternate-reverse infinite;
+}

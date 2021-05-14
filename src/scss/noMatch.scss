@@ -1,0 +1,65 @@
+#error-404{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    // background: white;
+    background-color: #000;
+    background-image: url('./../assets/images/404Stars.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 11;
+    .error__title{
+        font-size: 30px;
+        background: -webkit-linear-gradient(240deg, red, purple 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        // margin: 0;
+    }
+    .error-404__title{
+        font-size: 300px;
+        background: -webkit-linear-gradient(240deg, red, purple 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .error-404-contnent{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .module-border-wrap {
+        max-width: 250px;
+        padding: 1rem;
+        position: relative;
+        background: linear-gradient(to bottom, red, purple);
+        padding: 3px;
+        box-sizing: border-box;
+      }
+    .web-button-404{
+        padding: 9px 49px;
+        box-sizing: border-box;
+        background: black;
+        color: brown;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+  
+//   .module {
+//     background: #222;
+//     color: white;
+//     padding: 2rem;
+//   }

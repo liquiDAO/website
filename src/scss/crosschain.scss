@@ -1,0 +1,75 @@
+.Crosschain{
+    background: rgb(36, 2, 99);
+    position: relative;
+    padding-top: 300px;
+    box-sizing: border-box;
+    background-image: url(./../assets/images/illustrationCrosschain.svg);
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
+    @media(min-width:961px){
+        padding-top: 500px;
+    }
+    &__content{
+        max-width: 580px;
+        width: 100%;
+        top: 30px;
+        transform: translateY(0);
+        position: absolute;
+        right: 15px;
+        padding-left: 25px;
+        box-sizing: border-box;
+        text-align: right;
+        z-index: 3;
+        @media(min-width:961px){
+            top: 50%;
+            right: 100px;
+            transform: translateY(-50%);
+        }
+    }
+    &__grafic{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+// .MarketMaking__title{
+
+// }
+.CrosschainBG{
+    width: 67%;
+    margin-left: 10%;
+    bottom: 0;
+    z-index: 2;
+    position: absolute;
+    &_Left{
+        width: 30%;
+        // position: absolute;
+        // bottom: 0;
+        z-index: 0;
+        // left: 0;
+    }
+    &_Right{
+        width: 25%;
+        // position: absolute;
+        // right: 0;
+        bottom: 0;
+        // z-index: 0;
+    }
+}
+.cloudLeft{
+    position: absolute;
+    top: 10px;
+    height: auto;
+    width: 35%;
+    left: -10px;
+    opacity: .7;
+}
+.cloudRight{
+    position: absolute;
+    top: 35px;
+    height: auto;
+    width: 35%;
+    right: 5%;
+    opacity: .7;
+}

@@ -1,0 +1,116 @@
+.MarketMaking{
+    // background: rgb(36, 2, 99);
+    background: radial-gradient( rgb(135, 21, 177) 0%, rgb(4, 0, 5) 80%);
+    position: relative;
+    padding-top: 180px;
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
+    &__content{
+        max-width: 580px;
+        width: 100%;
+        top: 20px;
+        transform: translateY(0);
+        position: absolute;
+        right: 15px;
+        padding-left: 25px;
+        box-sizing: border-box;
+        text-align: right;
+        z-index: 3;
+        @media(min-width:910px){
+            right: 100px;
+        }
+        @media (min-width:500) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+// .MarketMaking__title{
+
+// }
+.MarketMakingBG{
+    width: 60%;
+    max-width: 1120px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    @media(min-width:910px){
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+.m-planet1{
+    position: absolute;
+    height: auto;
+    width: 90.5px;
+    top: 30%;
+    left: 7%;
+    animation: planet 1.8s  ease-in-out alternate-reverse infinite;
+    animation-duration: -0.8s;
+    @media(min-width:910px){
+        width: 181px;
+    }
+}
+.m-planet6{
+    position: absolute;
+    width: 63px;
+    height: 62.5px;
+    top: 22%;
+    left: 42%;
+    animation: planet 1.7s  ease-in-out alternate-reverse infinite;
+    animation-duration: -0.3s;
+    @media(min-width:910px){
+        width: 126px;
+        height: 125px;
+    }
+}
+.m-planet3{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 41%;
+    left: 48%;
+    animation: planet 1.8s  ease-in-out alternate-reverse infinite;
+    animation-duration: -1s;
+    @media(min-width:910px){
+        width: 130px;
+        height: 130px;
+    }
+}
+.m-planet4{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 47px;
+    height: 31.5px;
+    animation: planet 1.5s  ease-in-out alternate-reverse infinite;
+    animation-duration: -0.9s;
+    @media(min-width:910px){
+        width: 94px;
+        height: 63px;
+    }
+}
+.m-planet5{
+    position: absolute;
+    top: 62%;
+    width: 53px;
+    height: 52.5px;
+    left: 16%;
+    animation: planet 1.2s  ease-in-out alternate-reverse infinite;
+    animation-duration: -1.5.8s;
+    @media(min-width:910px){
+        width: 106px;
+        height: 105px;
+    }
+}
+
+@keyframes planet{
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,191 @@
+// @import './../scss/style.scss';
+.menu{
+    width: 100%;
+    margin-bottom: -108px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    right: 0;
+    &-container{
+        display: flex;
+        // justify-content: flex-start;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 200px);
+        // max-width: 1500px;
+        margin: 20px auto 0;
+        @media (max-width: 760px) {
+            justify-content: space-between;
+        }
+        @media(max-width: 910px){
+            width: calc(100% - 30px);
+        }
+    }
+}
+// .menuWeve{
+//     width: 100%;
+//     position: absolute !important;
+//     top: 0;
+// }
+.menu__navigation{
+    margin-left: 215px;
+    @media (max-width: 1235px) {
+        margin-left: 30px;
+    }
+    @media (max-width: 760px) {
+        display: none;
+    }
+    &__item{
+        margin-right: 64px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        @media (max-width: 1235px) {
+            margin-right: 30px;
+        }
+    }
+    &__btn{
+        height: 42px;
+        width: 180px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        background-image: linear-gradient(#C12E5B , #313280);
+        transition: 0.33s;
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.menu__logo{
+    width: 98px;
+    height: 73px;
+}
+.hamburger-mb-menu{
+    display: none;
+    @media (max-width: 760px) {
+        display: block;
+        width: 50px;
+        height: 25px;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .hamburger1, .hamburger2, .hamburger3 , .hamburger11, .hamburger22, .hamburger33{
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transition: .25s ease-in-out;
+    }
+    
+    .hamburger1 {
+        top: 0px;
+        transform-origin: center center;
+    }
+
+    .hamburger2 {
+      top: 10px;
+      transform-origin: center center;
+    }
+
+    .hamburger3 {
+      top: 20px;
+      transform-origin: center center;
+    }
+
+    .hamburger11 {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 16px;
+    }
+
+    .hamburger22 {
+      width: 0%;
+      opacity: 0;
+    }
+
+    .hamburger33 {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 16px;
+    }
+}
+
+.menu-blok{
+    display: none;
+    
+    &-active{
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        height: 100vh;
+        background: rgba(0,0,0,0.3);
+        display: flex;
+        justify-content: flex-end;
+        @media (min-width: 800px) {
+            display: none;
+        }
+    }
+    &__container{
+        width: 400px;
+        margin-right: -400px;
+        background-color: #00194A;
+        background-image: url('./../assets/images/JoinshapeLeft.svg');
+        background-size: 100%;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        animation-name: hamburgerMenu;
+        animation-duration: 1s;
+        animation-delay: .2s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        @keyframes hamburgerMenu {
+            from {margin-right: -400px;}
+            to {margin-right: 0px;}
+        }
+    }
+    &__navigation{
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+    &__item{
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    &__link{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    &__btn{
+        // width: 176px;
+        // height: 42px;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 40px;
+        padding: 12px 40px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: white;
+        background-image: linear-gradient(#C12E5B, #313280);
+    }
+}

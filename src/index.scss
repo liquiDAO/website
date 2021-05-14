@@ -1,0 +1,69 @@
+body,h1,h2,h3,p {
+    margin: 0;
+}
+a{
+  text-decoration: none;
+}
+html{
+  touch-action: manipulation;
+  content-visibility: auto;
+}
+
+body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  background-color: #480b5f;
+}
+
+body::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #480b5f;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #aa01f2;
+}
+
+.wrapper{
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.title{
+  color: white;
+  font-size: 64px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  @media (max-width:960px){
+    font-size: 30px;
+  }
+}
+.subTitle{
+  color: white;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  @media (max-width:960px){
+    font-size: 16px;
+  }
+}
+#routerContent{
+  min-height: 100vh;
+}
