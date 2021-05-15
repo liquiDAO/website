@@ -165,13 +165,6 @@ function Footer() {
           Blog
         </a>
         <Link
-          href="/onepager.pdf"
-          target="_blank"
-          className="footer__navbar__link"
-        >
-          Governance
-        </Link>
-        <Link
           to="/whitepaper.pdf"
           target="_blank"
           className="footer__navbar__link"
