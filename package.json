@@ -24,8 +24,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "plugin:prettier/recommended"
+      "react-app/jest"
     ]
   },
   "prettier": {
@@ -46,8 +45,6 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.0"
   }
 }
