@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
 import Navbar from './components/Navbar';
 
-
 function App() {
   return (
     <BrowserRouter>

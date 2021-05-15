@@ -65,8 +65,7 @@ import Partner57 from './../assets/images/Group453.png';
 import Partner58 from './../assets/images/Group454.png';
 import Partner59 from './../assets/images/Group455.png';
 // import Partner60 from './../assets/images/Group456.png';
-import onionLogo from './../assets/images/onion.png'
-
+import onionLogo from './../assets/images/onion.png';
 
 function Footer() {
   return (
@@ -176,16 +175,15 @@ function Footer() {
           Whitepaper
         </Link>
         <a
-              href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
-              rel="noreferrer"
-              target="_blank"
-              className="footer__navbar__link"
-            >
-            
-              <img src={onionLogo} height="16px" alt="onion hidden service" />
-              {` `}
-              Onion V3
-            </a>
+          href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
+          rel="noreferrer"
+          target="_blank"
+          className="footer__navbar__link"
+        >
+          <img src={onionLogo} height="16px" alt="onion hidden service" />
+          {` `}
+          Onion V3
+        </a>
       </div>
     </footer>
   );

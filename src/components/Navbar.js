@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './../scss/navbar.scss';
 import { Link } from 'react-router-dom';
 import Logo from './../assets/images/logo.png';
-import onionLogo from './../assets/images/onion.png'
+import onionLogo from './../assets/images/onion.png';
 
 // illustrationWelcome
 // import { connect } from 'react-redux';
@@ -57,7 +57,6 @@ function Navbar() {
               target="_blank"
               className="menu__navigation__item"
             >
-            
               <img src={onionLogo} height="20px" alt="onion hidden service" />
               {` `}
               Onion V3
@@ -112,17 +111,20 @@ function Navbar() {
                   </a>
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
-                <a
-              href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
-              rel="noreferrer"
-              target="_blank"
-              className="menu-blok__link"
-            >
-            
-              <img src={onionLogo} height="20px" alt="onion hidden service" />
-              {` `}
-              Onion V3
-            </a>
+                  <a
+                    href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="menu-blok__link"
+                  >
+                    <img
+                      src={onionLogo}
+                      height="20px"
+                      alt="onion hidden service"
+                    />
+                    {` `}
+                    Onion V3
+                  </a>
                 </li>
               </ul>
               <Link
