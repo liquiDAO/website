@@ -26,7 +26,7 @@ function Navbar() {
               Home
             </Link>
             <a
-              href="https://community.liquidao.io"
+              href="https://github.com/liquiDAO/community"
               rel="noreferrer"
               target="_blank"
               className="menu__navigation__item"
@@ -88,7 +88,7 @@ function Navbar() {
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
                   <a
-                    href="https://community.liquidao.io"
+                    href="https://github.com/liquiDAO/community"
                     rel="noreferrer"
                     target="_blank"
                     className="menu-blok__link"

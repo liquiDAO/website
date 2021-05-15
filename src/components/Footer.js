@@ -149,7 +149,7 @@ function Footer() {
       </div>
       <div className="footer__navbar">
         <a
-          href="https://community.liquidao.io"
+          href="https://github.com/liquiDAO/community"
           rel="noreferrer"
           target="_blank"
           className="footer__navbar__link"
