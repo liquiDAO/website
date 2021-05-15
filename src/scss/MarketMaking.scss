@@ -8,9 +8,9 @@
   // align-items: center;
   // justify-content: flex-end;
   &__content {
-    max-width: 580px;
+    max-width: 680px;
     width: 100%;
-    top: 20px;
+    top: 30px;
     transform: translateY(0);
     position: absolute;
     right: 15px;
@@ -18,11 +18,9 @@
     box-sizing: border-box;
     text-align: right;
     z-index: 3;
-    @media (min-width: 910px) {
-      right: 100px;
-    }
-    @media (min-width: 500) {
+    @media (min-width: 961px) {
       top: 50%;
+      right: 100px;
       transform: translateY(-50%);
     }
   }

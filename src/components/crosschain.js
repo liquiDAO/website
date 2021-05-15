@@ -10,7 +10,7 @@ function Crosschain() {
   return (
     <section className="Crosschain">
       <div className="Crosschain__content">
-        <h1 className="title">Crosschain Liquidy BRIDGE</h1>
+        <h1 className="title">Crosschain Liquidity BRIDGE</h1>
         <p className="subTitle">
           LDAO token bridges liquidity from other blockchain ecosystems. LDAO
           token is redeemable on Liquid Network, Binance Smart Chain, and

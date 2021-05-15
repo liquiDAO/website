@@ -11,10 +11,10 @@ function MarketMaking() {
   return (
     <section className="MarketMaking">
       <div className="MarketMaking__content">
-        <h1 className="title">Decentralized finance on BITCOIN</h1>
+        <h1 className="title">Liquidity & Market Making</h1>
         <p className="subTitle">
-          Unlocking a permissionless alternative to centralized banking, powered
-          by the world's largest blockchain.
+          Creating an highly liquid, yield generating ecosystem to scale
+          Bitcoin-enabled DeFi.
         </p>
       </div>
       <div className="MarketMaking__grafic">

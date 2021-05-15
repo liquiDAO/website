@@ -69,7 +69,9 @@ import Partner59 from './../assets/images/Group455.png';
 function Footer() {
   return (
     <footer className="footer">
-      <h2 className="join-us__title">Our partners</h2>
+      <h2 className="join-us__title">
+        integrated by design for the Following Partners
+      </h2>
       <div className="footer__partners">
         <div alt="logoImg" className="footer__partner-iconF">
           <Path5 className="footer__planet2" />
@@ -164,13 +166,6 @@ function Footer() {
         >
           Blog
         </a>
-        <Link
-          href="/onepager.pdf"
-          target="_blank"
-          className="footer__navbar__link"
-        >
-          Governance
-        </Link>
         <Link
           to="/whitepaper.pdf"
           target="_blank"

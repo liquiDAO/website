@@ -41,13 +41,6 @@ function Navbar() {
             >
               Blog
             </a>
-            <Link
-              to="/onepager.pdf"
-              target="_blank"
-              className="menu__navigation__item"
-            >
-              Governance
-            </Link>
             <button className="menu__navigation__btn">
               <Link
                 to="/whitepaper.pdf"
@@ -105,15 +98,6 @@ function Navbar() {
                   >
                     Blog
                   </a>
-                </li>
-                <li>
-                  <Link
-                    to="/onepager.pdf"
-                    target="_blank"
-                    className="menu-blok__link"
-                  >
-                    Governance
-                  </Link>
                 </li>
               </ul>
               <Link
