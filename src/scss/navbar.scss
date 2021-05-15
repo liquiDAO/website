@@ -57,6 +57,10 @@
     color: white;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    margin-right: 32px;
+    @media (max-width: 1235px) {
+      margin-right: 15px;
+    }
     cursor: pointer;
     background-image: linear-gradient(#c12e5b, #313280);
     transition: 0.33s;
