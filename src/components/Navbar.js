@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './../scss/navbar.scss';
 import { Link } from 'react-router-dom';
 import Logo from './../assets/images/logo.png';
+import onionLogo from './../assets/images/onion.png';
 
 // illustrationWelcome
 // import { connect } from 'react-redux';
@@ -26,7 +27,7 @@ function Navbar() {
               Home
             </Link>
             <a
-              href="https://github.com/liquiDAO/community"
+              href="https://github.com/liquiDAO/community/discussions"
               rel="noreferrer"
               target="_blank"
               className="menu__navigation__item"
@@ -50,6 +51,16 @@ function Navbar() {
                 Whitepaper
               </Link>
             </button>
+            <a
+              href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
+              rel="noreferrer"
+              target="_blank"
+              className="menu__navigation__item"
+            >
+              <img src={onionLogo} height="20px" alt="onion hidden service" />
+              {` `}
+              Onion V3
+            </a>
           </div>
           <div className="hamburger-mb-menu" onClick={hamburgerOpen}>
             <span
@@ -81,7 +92,7 @@ function Navbar() {
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
                   <a
-                    href="https://github.com/liquiDAO/community"
+                    href="https://github.com/liquiDAO/community/discussions"
                     rel="noreferrer"
                     target="_blank"
                     className="menu-blok__link"
@@ -97,6 +108,22 @@ function Navbar() {
                     className="menu-blok__link"
                   >
                     Blog
+                  </a>
+                </li>
+                <li onClick={hamburgerOpen} className="menu-blok__item">
+                  <a
+                    href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="menu-blok__link"
+                  >
+                    <img
+                      src={onionLogo}
+                      height="20px"
+                      alt="onion hidden service"
+                    />
+                    {` `}
+                    Onion V3
                   </a>
                 </li>
               </ul>
