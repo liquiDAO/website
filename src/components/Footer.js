@@ -1,5 +1,5 @@
-import React from 'react'
-import './../scss/footer.scss'
+import React from 'react';
+import './../scss/footer.scss';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Path1 } from './../assets/images/inst.svg';
 import { ReactComponent as Path2 } from './../assets/images/face.svg';
@@ -70,92 +70,112 @@ import Partner58 from './../assets/images/Group454.png';
 import Partner59 from './../assets/images/Group455.png';
 // import Partner60 from './../assets/images/Group456.png';
 
-function Footer(){
-    return(
-        <footer className='footer'>
-            <h2 className='join-us__title'>Our partners</h2>
-            <div className='footer__partners'>
-                <div alt='logoImg' className='footer__partner-iconF'>
-                    <Path5 className='footer__planet2'/>
-                    <img src={FooterPlanet1} alt='logoImg' className='footer__planet1' rel="preload"/>
-                    <img src={FooterPlanet} alt='logoImg' className='footer__planet' rel="preload"/>
-                    {/* <img src={FooterPlanet2} alt='logoImg' className='footer__planet2'/> */}
-                </div>
-                <img src={Partner1} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner2} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner3} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner4} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner5} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner6} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner7} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner8} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner9} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner10} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner11} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner12} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner13} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner14} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner15} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner16} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner17} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner18} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner19} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner20} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner21} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner22} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner23} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner24} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner25} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner26} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner27} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner28} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner29} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner30} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner31} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner32} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner33} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner34} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner35} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner36} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner37} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner38} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner39} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner40} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner41} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner42} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner43} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner44} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner45} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner46} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner47} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner48} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner49} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner50} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner51} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner52} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner53} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner54} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner55} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner56} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner57} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner58} alt='logoImg' className='footer__partner-icon'/>
-                <img src={Partner59} alt='logoImg' className='footer__partner-icon'/>
-            </div>
-            <div className='footer__navbar'>
-                <Link to='/' className='footer__navbar__link'>About Us</Link>
-                <Link to='/' className='footer__navbar__link'>blog</Link>
-                <Link to='/' className='footer__navbar__link'>Contact Us</Link>
-                <Link to='/aaa' className='footer__navbar__link'>Sell Bitcoin/ Giftcard</Link>
-                <Link to='/faq' className='footer__navbar__link'>FAQ</Link>
-            </div>
-            <div className='footer__icons'>
-                <Path3  className='footer__icons__item'/>
-                <Path2  className='footer__icons__item'/>
-                <Path1  className='footer__icons__item'/>
-                <Path4  className='footer__icons__item'/>
-            </div>
-        </footer>
-    )
+function Footer() {
+  return (
+    <footer className="footer">
+      <h2 className="join-us__title">Our partners</h2>
+      <div className="footer__partners">
+        <div alt="logoImg" className="footer__partner-iconF">
+          <Path5 className="footer__planet2" />
+          <img
+            src={FooterPlanet1}
+            alt="logoImg"
+            className="footer__planet1"
+            rel="preload"
+          />
+          <img
+            src={FooterPlanet}
+            alt="logoImg"
+            className="footer__planet"
+            rel="preload"
+          />
+          {/* <img src={FooterPlanet2} alt='logoImg' className='footer__planet2'/> */}
+        </div>
+        <img src={Partner1} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner2} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner3} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner4} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner5} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner6} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner7} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner8} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner9} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner10} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner11} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner12} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner13} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner14} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner15} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner16} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner17} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner18} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner19} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner20} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner21} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner22} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner23} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner24} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner25} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner26} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner27} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner28} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner29} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner30} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner31} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner32} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner33} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner34} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner35} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner36} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner37} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner38} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner39} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner40} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner41} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner42} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner43} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner44} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner45} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner46} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner47} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner48} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner49} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner50} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner51} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner52} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner53} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner54} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner55} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner56} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner57} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner58} alt="logoImg" className="footer__partner-icon" />
+        <img src={Partner59} alt="logoImg" className="footer__partner-icon" />
+      </div>
+      <div className="footer__navbar">
+        <Link to="/" className="footer__navbar__link">
+          About Us
+        </Link>
+        <Link to="/" className="footer__navbar__link">
+          blog
+        </Link>
+        <Link to="/" className="footer__navbar__link">
+          Contact Us
+        </Link>
+        <Link to="/aaa" className="footer__navbar__link">
+          Sell Bitcoin/ Giftcard
+        </Link>
+        <Link to="/faq" className="footer__navbar__link">
+          FAQ
+        </Link>
+      </div>
+      <div className="footer__icons">
+        <Path3 className="footer__icons__item" />
+        <Path2 className="footer__icons__item" />
+        <Path1 className="footer__icons__item" />
+        <Path4 className="footer__icons__item" />
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

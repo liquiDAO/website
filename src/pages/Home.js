@@ -1,5 +1,5 @@
-import React from 'react'
-import './../scss/home.scss'
+import React from 'react';
+import './../scss/home.scss';
 // import Path1 from './../components/test.html'
 // import { ReactComponent as Path1 } from './../assets/images/liveBG1.svg';
 import Footer from '../components/Footer';
@@ -9,20 +9,20 @@ import Powered from '../components/power';
 import Crosschain from '../components/crosschain';
 import JoinUs from '../components/joinUs';
 
-function Home(){
-    return(
-        <div className='home'>
-            {/* <Path1 className='LiveBg'/> */}
-            
-            {/* <h1>Home</h1> */}
-            <Welcome/>
-            <MarketMaking/>
-            <Powered/>
-            <Crosschain/>
-            <JoinUs/>
-            <Footer/>
-        </div>
-    )
+function Home() {
+  return (
+    <div className="home">
+      {/* <Path1 className='LiveBg'/> */}
+
+      {/* <h1>Home</h1> */}
+      <Welcome />
+      <MarketMaking />
+      <Powered />
+      <Crosschain />
+      <JoinUs />
+      <Footer />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
