@@ -44,7 +44,7 @@ function JoinUs() {
             <img alt="work" src={iconfinderAsset2} className="work-block_img" />
             <p className="work-block__item__text">
               Using Bitcoin and Liquid Network, LiquiDAO aggregates and deploys
-              financial liquadity into trust-minimised, non custodial trading
+              financial liquidity into trust-minimised, non custodial trading
               services via Discreet Log Contracts, Hashed Time-Locked Collateral
               Contracts, Multisignatures, and atomic swaps.
             </p>
@@ -68,7 +68,7 @@ function JoinUs() {
           {/* <input type='radio'/> */}
           <div className="join-us__table__container">
             <div className="join-us__table__row">
-              <div className="join-us__table__item">Issues Assets</div>
+              <div className="join-us__table__item">Issued Assets</div>
               <div className="join-us__table__item">Atomic Swaps</div>
               <div className="join-us__table__item">Discreet Log Contracts</div>
             </div>
