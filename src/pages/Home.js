@@ -12,9 +12,6 @@ import JoinUs from '../components/joinUs';
 function Home() {
   return (
     <div className="home">
-      {/* <Path1 className='LiveBg'/> */}
-
-      {/* <h1>Home</h1> */}
       <Welcome />
       <MarketMaking />
       <Powered />

@@ -8,10 +8,9 @@ function Powered() {
   return (
     <section className="Powered">
       <div className="Powered__content">
-        <h1 className="title">Decentralized finance on BITCOIN</h1>
+        <h1 className="title">Powered By Liquid Network</h1>
         <p className="subTitle">
-          Unlocking a permissionless alternative to centralized banking, powered
-          by the world's largest blockchain.
+          A Bitcoin Layer 2 Network that allows for rapid, low-cost, confidential transactions and digital asset settlements.
         </p>
       </div>
       <div className="Powered__grafic">

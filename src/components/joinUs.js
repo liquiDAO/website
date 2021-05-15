@@ -1,6 +1,5 @@
 import React from 'react';
 import './../scss/joinUs.scss';
-import MailInp from './../components/mailInp';
 import iconfinderAsset1 from './../assets/images/iconfinderAsset1.png';
 import iconfinderAsset2 from './../assets/images/iconfinderAsset2.png';
 import iconfinderAsset from './../assets/images/iconfinderAsset.png';
@@ -32,8 +31,6 @@ function JoinUs() {
     <section className="join-us">
       <Particles params={particleOpt} className="particles" />
       <div className="join-us__form">
-        <h2 className="join-us__title">join us</h2>
-        <MailInp />
         <p className="join-us__bigtitle">How it works</p>
         <div className="work-block">
           <div className="work-block__item">
@@ -80,6 +77,7 @@ function JoinUs() {
           </div>
         </div>
         <div className="join-us__footer">
+          <h2 className="join-us__title">Leveraging the Liquid Network</h2>
           <span className="join-us__footer__line" />
           <div className="join-us__footer__item">
             <h2 className="join-us__subTitle ">58+</h2>
@@ -101,7 +99,7 @@ function JoinUs() {
           </div>
         </div>
       </div>
-      {/* <div className='FAQ'> */}
+      {/* <div className='FAQ'> 
       <h1 className="FAQ__title">FAQ</h1>
       <div className="FAQ__container">
         <details className="FAQ__details">
@@ -170,8 +168,7 @@ function JoinUs() {
           </p>
         </details>
       </div>
-      <h2 className="join-us__title">Learn more</h2>
-      <MailInp />
+      */}
       <Particles params={particleOpt} className="particles" />
       {/* </div> */}
     </section>
