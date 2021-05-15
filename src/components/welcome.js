@@ -23,8 +23,6 @@ function Welcome() {
         <MailInp />
       </div>
 
-  
-      
       <div className="welcome__grafic">
         <Path1 className="w-Pnalet1" rel="preload" />
         <Path2 className="w-Pnalet2" rel="preload" />

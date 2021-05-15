@@ -13,7 +13,8 @@ function MarketMaking() {
       <div className="MarketMaking__content">
         <h1 className="title">Liquidity & Market Making</h1>
         <p className="subTitle">
-          Creating an highly liquid, yield generating ecosystem to scale Bitcoin-enabled DeFi.
+          Creating an highly liquid, yield generating ecosystem to scale
+          Bitcoin-enabled DeFi.
         </p>
       </div>
       <div className="MarketMaking__grafic">

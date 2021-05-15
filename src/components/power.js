@@ -10,7 +10,8 @@ function Powered() {
       <div className="Powered__content">
         <h1 className="title">Powered By Liquid Network</h1>
         <p className="subTitle">
-          A Bitcoin Layer 2 Network that allows for rapid, low-cost, confidential transactions and digital asset settlements.
+          A Bitcoin Layer 2 Network that allows for rapid, low-cost,
+          confidential transactions and digital asset settlements.
         </p>
       </div>
       <div className="Powered__grafic">
