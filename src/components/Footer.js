@@ -1,10 +1,6 @@
 import React from 'react';
 import './../scss/footer.scss';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Path1 } from './../assets/images/inst.svg';
-import { ReactComponent as Path2 } from './../assets/images/face.svg';
-import { ReactComponent as Path3 } from './../assets/images/youtube.svg';
-import { ReactComponent as Path4 } from './../assets/images/tweeter.svg';
 import FooterPlanet from './../assets/images/footerPlanet.png';
 import FooterPlanet1 from './../assets/images/cheesePlanet.png';
 import { ReactComponent as Path5 } from './../assets/images/planet6.svg';
@@ -152,27 +148,36 @@ function Footer() {
         <img src={Partner59} alt="logoImg" className="footer__partner-icon" />
       </div>
       <div className="footer__navbar">
-        <Link to="/" className="footer__navbar__link">
-          About Us
+        <a
+          href="https://github.com/liquiDAO/community"
+          rel="noreferrer"
+          target="_blank"
+          className="footer__navbar__link"
+        >
+          Community
+        </a>
+        <a
+          href="https://blog.liquidao.io"
+          rel="noreferrer"
+          target="_blank"
+          className="footer__navbar__link"
+        >
+          Blog
+        </a>
+        <Link
+          href="/onepager.pdf"
+          target="_blank"
+          className="footer__navbar__link"
+        >
+          Governance
         </Link>
-        <Link to="/" className="footer__navbar__link">
-          blog
+        <Link
+          to="/whitepaper.pdf"
+          target="_blank"
+          className="footer__navbar__link"
+        >
+          Whitepaper
         </Link>
-        <Link to="/" className="footer__navbar__link">
-          Contact Us
-        </Link>
-        <Link to="/aaa" className="footer__navbar__link">
-          Sell Bitcoin/ Giftcard
-        </Link>
-        <Link to="/faq" className="footer__navbar__link">
-          FAQ
-        </Link>
-      </div>
-      <div className="footer__icons">
-        <Path3 className="footer__icons__item" />
-        <Path2 className="footer__icons__item" />
-        <Path1 className="footer__icons__item" />
-        <Path4 className="footer__icons__item" />
       </div>
     </footer>
   );

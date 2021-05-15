@@ -25,16 +25,38 @@ function Navbar() {
             <Link to="/" className="menu__navigation__item">
               Home
             </Link>
-            <Link to="/" className="menu__navigation__item">
-              Comunity
-            </Link>
-            <Link to="/" className="menu__navigation__item">
+            <a
+              href="https://github.com/liquiDAO/community"
+              rel="noreferrer"
+              target="_blank"
+              className="menu__navigation__item"
+            >
+              Community
+            </a>
+            <a
+              href="https://blog.liquidao.io"
+              rel="noreferrer"
+              target="_blank"
+              className="menu__navigation__item"
+            >
               Blog
-            </Link>
-            <Link to="/" className="menu__navigation__item">
+            </a>
+            <Link
+              to="/onepager.pdf"
+              target="_blank"
+              className="menu__navigation__item"
+            >
               Governance
             </Link>
-            <button className="menu__navigation__btn">Go to App</button>
+            <button className="menu__navigation__btn">
+              <Link
+                to="/whitepaper.pdf"
+                target="_blank"
+                style={{ color: 'white' }}
+              >
+                Whitepaper
+              </Link>
+            </button>
           </div>
           <div className="hamburger-mb-menu" onClick={hamburgerOpen}>
             <span
@@ -60,28 +82,46 @@ function Navbar() {
             >
               <ul className="menu-blok__navigation">
                 <li onClick={hamburgerOpen} className="menu-blok__item">
-                  <Link to="/aboutus" className="menu-blok__link">
-                    About
+                  <Link to="/" className="menu-blok__link">
+                    Home
                   </Link>
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
-                  <Link to="/partners" className="menu-blok__link">
-                    Partners
-                  </Link>
+                  <a
+                    href="https://github.com/liquiDAO/community"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="menu-blok__link"
+                  >
+                    Community
+                  </a>
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
-                  <Link to="/contacts" className="menu-blok__link">
-                    Contacts
-                  </Link>
+                  <a
+                    href="https://blog.liquidao.io"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="menu-blok__link"
+                  >
+                    Blog
+                  </a>
                 </li>
-                <li onClick={hamburgerOpen} className="menu-blok__item">
-                  <Link to="/faq" className="menu-blok__link">
-                    FAQ
+                <li>
+                  <Link
+                    to="/onepager.pdf"
+                    target="_blank"
+                    className="menu-blok__link"
+                  >
+                    Governance
                   </Link>
                 </li>
               </ul>
-              <Link to="/" className="menu-blok__btn">
-                Go to App
+              <Link
+                to="/whitepaper.pdf"
+                target="_blank"
+                className="menu-blok__btn"
+              >
+                Whitepaper
               </Link>
             </div>
           </div>
