@@ -21,8 +21,8 @@ jobs:
         with:
           node-version: 14
 
-      - name: Format
-        run: yarn format
+      - run: yarn install --frozen-lockfile
 
-      - name: Build
-        run: yarn build
+      - run: yarn format
+      
+      - run: yarn build
