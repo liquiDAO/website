@@ -18,9 +18,7 @@ function Welcome() {
           Unlocking a permissionless alternative to centralized banking, powered
           by the world's largest blockchain.
         </p>
-        {/*         <br />
-        <h2 className="join-us__title">join us</h2>
-        <MailInp /> */}
+        {/* <MailInp />  */}
       </div>
 
       <div className="welcome__grafic">

@@ -167,6 +167,15 @@ function Footer() {
         >
           Blog
         </a>
+        <a
+          href="https://matrix.to/#/#liquidao:matrix.org?via=matrix.org"
+          rel="noreferrer"
+          target="_blank"
+          className="footer__navbar__link"
+        >
+          {` `}
+          Join the Matrix channel
+        </a>
         <Link
           to="/whitepaper.pdf"
           target="_blank"
@@ -174,6 +183,7 @@ function Footer() {
         >
           Whitepaper
         </Link>
+
         <a
           href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
           rel="noreferrer"
