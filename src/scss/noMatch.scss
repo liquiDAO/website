@@ -4,61 +4,94 @@
   height: 100vh;
   top: 0;
   left: 0;
-
-  // background: white;
-  background-color: #000;
-  background-image: url('./../assets/images/404Stars.svg');
-  background-position: center center;
+  background-image: url('./../assets/images/illustrationPowered.svg') , url('./../assets/images/illustrationCrosschain.svg');
+  background-position: center bottom, center center;
+  background-size: auto, cover;
   background-repeat: no-repeat;
   z-index: 11;
+  .error-bg{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: auto;
+    position: absolute;
+    @media (max-width: 750px) {
+      right: 0;
+      height: 250px;
+    }
+  }
   .error__title {
     font-size: 30px;
-    background: -webkit-linear-gradient(240deg, red, purple 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
     font-family: 'Montserrat', sans-serif;
-    // margin: 0;
+    @media (max-width: 750px) {
+      font-size: 15px;
+    }
   }
   .error-404__title {
     font-size: 300px;
-    background: -webkit-linear-gradient(240deg, red, purple 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
     font-family: 'Montserrat', sans-serif;
+    @media (max-width: 750px) {
+      font-size: 150px;
+    }
+  }
+  .astronaut-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: astronaut 1.8s ease-in-out alternate-reverse infinite;
+    @media (max-width: 750px) {
+      width: 150px;
+    }
   }
   .error-404-contnent {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 3;
   }
-  .module-border-wrap {
-    max-width: 250px;
-    padding: 1rem;
-    position: relative;
-    background: linear-gradient(to bottom, red, purple);
-    padding: 3px;
-    box-sizing: border-box;
-  }
-  .web-button-404 {
-    padding: 9px 49px;
-    box-sizing: border-box;
-    background: black;
-    color: brown;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
+  .error-404__btn{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 12px 30px;
+    color: white;
     font-family: 'Montserrat', sans-serif;
   }
 }
+.error-planet{
+  width: 400px;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  z-index: 1;
+  animation: planet 2.1s ease-in-out alternate-reverse infinite;
+  @media (max-width: 750px) {
+    right: 15px;
+  }
+}
+@keyframes planet {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
-//   .module {
-//     background: #222;
-//     color: white;
-//     padding: 2rem;
-//   }
+
+@keyframes astronaut {
+  0% {
+    transform: translate(-60%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

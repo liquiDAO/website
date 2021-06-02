@@ -183,7 +183,9 @@ function Footer() {
         >
           Whitepaper
         </Link>
-
+        <Link to="/faq" className="footer__navbar__link">
+          FAQ
+        </Link>
         <a
           href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
           rel="noreferrer"

@@ -3,6 +3,9 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
 import Navbar from './components/Navbar';
+import Road from './pages/Road';
+import FAQ from './pages/FAQ';
+import PDF from './pages/PDF';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
         <div id="routerContent">
           <ScrollToTop />
           <Switch>
+            <Route path='/faq' render={() => <FAQ/>}></Route>
+            <Route path='/road' render={() => <Road/>}></Route>
+            <Route path='/pdf' render={() => <PDF/>}></Route>
             <Route exact path="/" render={() => <Home />}></Route>
             <Route path="*" component={NoMatch} />
           </Switch>

@@ -1,8 +1,8 @@
 import React from 'react';
 import './../scss/power.scss';
-import { ReactComponent as Path0 } from './../assets/images/illustrationPowered.svg';
-import { ReactComponent as Path7 } from './../assets/images/planet7.svg';
-import { ReactComponent as Path8 } from './../assets/images/planet8.svg';
+import Path0 from './../assets/images/illustrationPowered.png';
+import Path7 from './../assets/images/planet8.png';
+import Path8  from './../assets/images/planet7.png';
 
 function Powered() {
   return (
@@ -15,9 +15,9 @@ function Powered() {
         </p>
       </div>
       <div className="Powered__grafic">
-        <Path7 className="planet7" rel="preload" />
-        <Path8 className="planet8" rel="preload" />
-        <Path0 className="PoweredBG" alt="backgroundIamge" rel="preload" />
+        <img src={Path7} className="planet7" rel="preload" alt='planet-img'/>
+        <img src={Path8} className="planet8" rel="preload" alt='planet-img'/>
+        <img src={Path0} className="PoweredBG" alt="backgroundIamge" rel="preload" />
       </div>
     </section>
   );

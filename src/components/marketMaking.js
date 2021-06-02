@@ -1,11 +1,11 @@
 import React from 'react';
 import './../scss/MarketMaking.scss';
 import MarketMakingBG from './../assets/images/illustration2.png';
-import { ReactComponent as Path1 } from './../assets/images/wplanet.svg';
-import { ReactComponent as Path3 } from './../assets/images/planet3.svg';
-import { ReactComponent as Path4 } from './../assets/images/planet4.svg';
-import { ReactComponent as Path5 } from './../assets/images/planet5.svg';
-import { ReactComponent as Path6 } from './../assets/images/planet6.svg';
+import Path1 from './../assets/images/wplanet.png';
+import Path3 from './../assets/images/planet3.svg';
+import path4 from './../assets/images/planet4.png';
+import Path5 from './../assets/images/planet5.svg';
+import Path6 from './../assets/images/planet6.svg';
 
 function MarketMaking() {
   return (
@@ -18,11 +18,11 @@ function MarketMaking() {
         </p>
       </div>
       <div className="MarketMaking__grafic">
-        <Path1 className="m-planet1" rel="preload" />
-        <Path3 className="m-planet3" rel="preload" />
-        <Path4 className="m-planet4" rel="preload" />
-        <Path5 className="m-planet5" rel="preload" />
-        <Path6 className="m-planet6" rel="preload" />
+        <img src={Path1} className="m-planet1" rel="preload" alt='plamet-img'/>
+        <img src={Path3} className="m-planet3" rel="preload" alt='plamet-img'/>
+        <img src={path4} className="m-planet4" rel="preload" alt='plamet-img'/>
+        <img src={Path5} className="m-planet5" rel="preload" alt='plamet-img'/>
+        <img src={Path6} className="m-planet6" rel="preload" alt='plamet-img'/>
         <img
           src={MarketMakingBG}
           className="MarketMakingBG"

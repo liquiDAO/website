@@ -39,15 +39,9 @@ function Navbar() {
             >
               Blog
             </a>
-            <a
-              href="https://matrix.to/#/#liquidao:matrix.org?via=matrix.org"
-              rel="noreferrer"
-              target="_blank"
-              className="menu__navigation__item"
-            >
-              {` `}
-              Join the Matrix channel
-            </a>
+            <Link to="/road" className="menu__navigation__item">
+              Roadmap
+            </Link>
             <button className="menu__navigation__btn">
               <Link
                 to="/whitepaper.pdf"
@@ -63,7 +57,7 @@ function Navbar() {
               target="_blank"
               className="menu__navigation__item"
             >
-              <img src={onionLogo} alt="onion hidden service" />
+              <img src={onionLogo} alt="onion hidden service" className='onionLogo'/>
             </a>
           </div>
           <div className="hamburger-mb-menu" onClick={hamburgerOpen}>
@@ -115,15 +109,9 @@ function Navbar() {
                   </a>
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
-                  <a
-                    href="https://matrix.to/#/#liquidao:matrix.org?via=matrix.org"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="menu-blok__link"
-                  >
-                    {` `}
-                    Join the Matrix channel
-                  </a>
+                  <Link to="/road" className="menu-blok__link">
+                    Roadmap
+                  </Link>
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
                   <a
