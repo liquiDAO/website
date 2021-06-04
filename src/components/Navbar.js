@@ -39,9 +39,9 @@ function Navbar() {
             >
               Blog
             </a>
-            <Link to="/roadmap" className="menu__navigation__item">
+            {/*  <Link to="/roadmap" className="menu__navigation__item">
               Roadmap
-            </Link>
+            </Link> */}
             <button className="menu__navigation__btn">
               <Link
                 to="/whitepaper.pdf"
@@ -112,11 +112,11 @@ function Navbar() {
                     Blog
                   </a>
                 </li>
-                <li onClick={hamburgerOpen} className="menu-blok__item">
+                {/* <li onClick={hamburgerOpen} className="menu-blok__item">
                   <Link to="/roadmap" className="menu-blok__link">
                     Roadmap
                   </Link>
-                </li>
+                </li> */}
                 <li onClick={hamburgerOpen} className="menu-blok__item">
                   <a
                     href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"

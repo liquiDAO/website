@@ -1,7 +1,6 @@
 import React from 'react';
 import './../scss/welcome.scss';
 import WelcomeBG from './../assets/images/illustrationWelcome.png';
-import MailInp from './../components/mailInp';
 import Path1 from './../assets/images/wplanet.png';
 import Path2 from './../assets/images/wplanet2.svg';
 import Path3 from './../assets/images/yellowStar.svg';
@@ -18,8 +17,8 @@ function Welcome() {
           Unlocking a permissionless alternative to centralized banking, powered
           by the world's largest blockchain.
         </p>
-        <h2 className="join-us__title">JOIN US</h2>
-        <MailInp />
+        {/*  <h2 className="join-us__title">JOIN US</h2>
+        <MailInp /> */}
       </div>
 
       <div className="welcome__grafic">
