@@ -1,8 +1,10 @@
 import React from 'react';
 import './../scss/road.scss';
 import BookmarkSimple from './../assets/images/BookmarkSimple.png';
+/* 
 import Check from './../assets/images/Check.png';
 import Clock from './../assets/images/Clock.png';
+ */
 
 function RoadItem(props) {
   return (
