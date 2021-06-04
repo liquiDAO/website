@@ -51,13 +51,13 @@ body::-webkit-scrollbar-thumb {
 .title {
   color: #fff;
   font-size: 64px;
-  font-family: "Montserrat",sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 20px;
   text-transform: uppercase;
-  @media (max-width: 1360px){
+  @media (max-width: 1360px) {
     font-size: 40px;
   }
-  @media (max-width:960px){
+  @media (max-width: 960px) {
     font-size: 24px;
   }
 }

@@ -4,12 +4,13 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url('./../assets/images/illustrationPowered.svg') , url('./../assets/images/illustrationCrosschain.svg');
+  background-image: url('./../assets/images/illustrationPowered.svg'),
+    url('./../assets/images/illustrationCrosschain.svg');
   background-position: center bottom, center center;
   background-size: auto, cover;
   background-repeat: no-repeat;
   z-index: 11;
-  .error-bg{
+  .error-bg {
     width: 100%;
     bottom: 0;
     left: 0;
@@ -37,7 +38,7 @@
       font-size: 150px;
     }
   }
-  .astronaut-img{
+  .astronaut-img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -58,7 +59,7 @@
     flex-direction: column;
     z-index: 3;
   }
-  .error-404__btn{
+  .error-404__btn {
     border: 2px solid white;
     border-radius: 5px;
     padding: 12px 30px;
@@ -66,7 +67,7 @@
     font-family: 'Montserrat', sans-serif;
   }
 }
-.error-planet{
+.error-planet {
   width: 400px;
   position: absolute;
   right: 100px;
@@ -85,7 +86,6 @@
     transform: translateY(0px);
   }
 }
-
 
 @keyframes astronaut {
   0% {

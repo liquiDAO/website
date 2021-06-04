@@ -18,11 +18,11 @@ function MarketMaking() {
         </p>
       </div>
       <div className="MarketMaking__grafic">
-        <img src={Path1} className="m-planet1" rel="preload" alt='plamet-img'/>
-        <img src={Path3} className="m-planet3" rel="preload" alt='plamet-img'/>
-        <img src={path4} className="m-planet4" rel="preload" alt='plamet-img'/>
-        <img src={Path5} className="m-planet5" rel="preload" alt='plamet-img'/>
-        <img src={Path6} className="m-planet6" rel="preload" alt='plamet-img'/>
+        <img src={Path1} className="m-planet1" rel="preload" alt="plamet-img" />
+        <img src={Path3} className="m-planet3" rel="preload" alt="plamet-img" />
+        <img src={path4} className="m-planet4" rel="preload" alt="plamet-img" />
+        <img src={Path5} className="m-planet5" rel="preload" alt="plamet-img" />
+        <img src={Path6} className="m-planet6" rel="preload" alt="plamet-img" />
         <img
           src={MarketMakingBG}
           className="MarketMakingBG"

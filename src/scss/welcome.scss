@@ -20,17 +20,17 @@
     padding-right: 15px;
     z-index: 3;
     bottom: 30px;
-    @media (min-width: 960px){
-        left: 100px;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        top: 50%;
+    @media (min-width: 960px) {
+      left: 100px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      top: 50%;
     }
-    & .join-us__form{
+    & .join-us__form {
       padding: 0;
       align-items: flex-start;
     }
-    &>.join-us__title{
+    & > .join-us__title {
       text-align: left;
       margin-top: 30px;
       margin-bottom: 0;

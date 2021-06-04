@@ -57,7 +57,11 @@ function Navbar() {
               target="_blank"
               className="menu__navigation__item"
             >
-              <img src={onionLogo} alt="onion hidden service" className='onionLogo'/>
+              <img
+                src={onionLogo}
+                alt="onion hidden service"
+                className="onionLogo"
+              />
             </a>
           </div>
           <div className="hamburger-mb-menu" onClick={hamburgerOpen}>

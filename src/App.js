@@ -15,9 +15,9 @@ function App() {
         <div id="routerContent">
           <ScrollToTop />
           <Switch>
-            <Route path='/faq' render={() => <FAQ/>}></Route>
-            <Route path='/road' render={() => <Road/>}></Route>
-            <Route path='/pdf' render={() => <PDF/>}></Route>
+            <Route path="/faq" render={() => <FAQ />}></Route>
+            <Route path="/road" render={() => <Road />}></Route>
+            <Route path="/pdf" render={() => <PDF />}></Route>
             <Route exact path="/" render={() => <Home />}></Route>
             <Route path="*" component={NoMatch} />
           </Switch>
