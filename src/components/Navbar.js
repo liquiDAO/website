@@ -39,7 +39,7 @@ function Navbar() {
             >
               Blog
             </a>
-            <Link to="/road" className="menu__navigation__item">
+            <Link to="/roadmap" className="menu__navigation__item">
               Roadmap
             </Link>
             <button className="menu__navigation__btn">
@@ -113,7 +113,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
-                  <Link to="/road" className="menu-blok__link">
+                  <Link to="/roadmap" className="menu-blok__link">
                     Roadmap
                   </Link>
                 </li>
