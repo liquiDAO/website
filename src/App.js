@@ -1,8 +1,11 @@
 import ScrollToTop from './scrollToTop/ScrollToTop';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Home from './pages/Home';
+import Presale from './pages/Presale';
 import NoMatch from './pages/NoMatch';
 import Navbar from './components/Navbar';
+
+import {MetamaskStateProvider} from 'use-metamask';
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
             <Route path="/roadmap" render={() => <Road />}></Route> */}
             {/* <Route path="/pdf" render={() => <PDF />}></Route> */}
             <Route exact path="/" render={() => <Home />}></Route>
+            <Route exact path="/presale" render={() =>     <MetamaskStateProvider><Presale /></MetamaskStateProvider>}></Route>
             <Route path="*" component={NoMatch} />
           </Switch>
         </div>
