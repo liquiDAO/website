@@ -49,6 +49,7 @@
     color: #c2c2c2;
     border-radius: 0 0 5px 5px;
     // background: #02062862;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     @media (max-width: 800px) {
       padding: 14px 35px 15px;
@@ -61,7 +62,7 @@
     color: #c2c2c2;
     border-radius: 0 0 5px 5px;
     // background: #02062862;
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     @media (max-width: 800px) {
       padding: 14px 35px 15px;
@@ -69,11 +70,11 @@
   }
   &__btn {
     height: 42px;
-    width: 380px;
+    width: 480px;
     border-radius: 5px;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     background-image: linear-gradient(#c12e5b, #313280);

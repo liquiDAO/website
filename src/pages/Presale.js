@@ -2,32 +2,24 @@ import React, { useEffect, useState } from 'react';
 import './../scss/presale.scss';
 import { ethers } from 'ethers';
 
-import { useMetamask } from 'use-metamask';
+import { MetamaskStateProvider, useMetamask } from 'use-metamask';
 import { useStatePersist } from 'use-state-persist';
 
-const USDT = '0xdac17f958d2ee523a2206206994597c13d831ec7';
-const DEPOSIT = '0x2820Ea87aBe5c69FE3E12DAEC54f02f57C3EF517';
+const USDT = '0xdAC17F958D2ee523a2206206994597C13D831ec7';
+const DEPOSIT = '0x6d7EfeDd25a8087A0DAC47ab0AFf5b8Bf54aEAD1';
 
 const tokenAbi = [
   'function approve(address _spender, uint256 _value) public returns (bool success)',
   'function allowance(address _owner, address _spender) external view returns (uint256)',
 ];
-const depositAbi = ['function buyTokens() public payable'];
-
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-const signer = provider.getSigner();
-
-const tokenContract = new ethers.Contract(USDT, tokenAbi, provider).connect(
-  signer,
-);
-const depositContract = new ethers.Contract(
-  DEPOSIT,
-  depositAbi,
-  provider,
-).connect(signer);
+const depositAbi = ['function buyTokens() public'];
 
 function Presale() {
   const { connect, metaState } = useMetamask();
+
+  const [tokenContract, setTokenContract] = useState({});
+  const [depositContract, setDepositContract] = useState({});
+
   const [isApproved, setIsApproved] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isDeposited, setIsDeposited] = useState(false);
@@ -37,8 +29,25 @@ function Presale() {
   useEffect(() => {
     const interval = setInterval(async () => {
       try {
+        if (window.ethereum === undefined) return;
+
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+
+        const token = new ethers.Contract(USDT, tokenAbi, provider).connect(
+          signer,
+        );
+        setTokenContract(token);
+
+        const deposit = new ethers.Contract(
+          DEPOSIT,
+          depositAbi,
+          provider,
+        ).connect(signer);
+        setDepositContract(deposit);
+
         const account = await signer.getAddress();
-        const result = await tokenContract.allowance(account, DEPOSIT);
+        const result = await token.allowance(account, DEPOSIT);
         const formatAmt = ethers.utils.formatUnits(result, 6);
 
         if (formatAmt > 0) {
@@ -54,7 +63,7 @@ function Presale() {
     return () => {
       clearInterval(interval);
     };
-  }, [allowance]);
+  }, [allowance, tokenContract, depositContract]);
 
   const unlock = async (evt) => {
     evt.preventDefault();
@@ -71,7 +80,7 @@ function Presale() {
   const approve = async (evt) => {
     evt.preventDefault();
     const amountAsString = prompt(
-      'Insert the number of USDt you want to deposit',
+      'Insert the number of USDT you want to deposit',
     );
     if (!amountAsString) return;
 
@@ -110,14 +119,27 @@ function Presale() {
         <div className="presale__container">
           <p className="presale__text">
             The contributions MUST be in USD Tether (USDT) on the Ethereum
-            network using MetaMask wallet. As receipt for the contribution will
-            be delivered to your wallet an ERC20 LiquiDAO Redeem Token (rLDAO)
-            that will grant reserved claim on the public token generation event.
-            1 rLDAO is equal to 1 USDT.
+            network using MetaMask wallet. As receipt for the contribution, an
+            ERC20 called LiquiDAO Redeem Token (rLDAO) will be delivered to your
+            wallet. It grants reserved access for claiming LDAO tokens on the
+            public token generation event. 1 rLDAO is equal to 1 USDT.
           </p>
 
-          <p className="presale__message">USDt allowance: {allowance}</p>
+          {metaState.isAvailable && metaState.isConnected && (
+            <p className="presale__message">USDT allowance: {allowance}</p>
+          )}
 
+          {!metaState.isAvailable && (
+            <button
+              type="submit"
+              className="presale__btn"
+              onClick={() => {
+                window.open(`https://metamask.io`);
+              }}
+            >
+              Install MetaMask
+            </button>
+          )}
           {metaState.isAvailable && metaState.isConnected ? (
             isApproved && allowance > 0 ? (
               <button
@@ -137,13 +159,17 @@ function Presale() {
                 className="presale__btn"
                 onClick={approve}
               >
-                {!isLoading ? `Approve USDT` : `Waiting for confirmation...`}
+                {!isLoading
+                  ? `Allow LiquiDAO smart contract to use your USDT`
+                  : `Waiting for confirmation...`}
               </button>
             )
           ) : (
-            <button type="submit" className="presale__btn" onClick={unlock}>
-              Unlock with MetaMask
-            </button>
+            metaState.isAvailable && (
+              <button type="submit" className="presale__btn" onClick={unlock}>
+                Unlock with MetaMask
+              </button>
+            )
           )}
         </div>
         <h1 className="presale__title">Your transactions</h1>
@@ -164,11 +190,22 @@ function Presale() {
 const showContributions = (txHashes) => (
   <div>
     {txHashes.map((txHash, index) => (
-      <a key={index} href={`https://etherscan.io/tx/${txHash}`} target="_blank">
+      <a
+        key={index}
+        href={`https://etherscan.io/tx/${txHash}`}
+        target="_blank"
+        rel="noreferrer"
+      >
         <p className="presale__message">{txHash}</p>
       </a>
     ))}
   </div>
 );
 
-export default Presale;
+const PresaleWithMetamask = () => (
+  <MetamaskStateProvider>
+    <Presale />
+  </MetamaskStateProvider>
+);
+
+export default PresaleWithMetamask;
