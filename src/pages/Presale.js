@@ -118,11 +118,12 @@ function Presale() {
         <h1 className="presale__title">Contribute</h1>
         <div className="presale__container">
           <p className="presale__text">
-            The contributions MUST be in USD Tether (USDT) on the Ethereum
-            network using MetaMask wallet. As receipt for the contribution, an
-            ERC20 called LiquiDAO Redeem Token (rLDAO) will be delivered to your
-            wallet. It grants reserved access for claiming LDAO tokens on the
-            public token generation event. 1 rLDAO is equal to 1 USDT.
+            Contributions MUST be made in USD Tether (USDT) on the Ethereum
+            network using the MetaMask wallet. As receipt for the contribution,
+            an ERC20 token called LiquiDAO Redeem Token (rLDAO) will be
+            delivered to your wallet. It grants reserved access for claiming
+            LDAO tokens on the public token generation event. 1 rLDAO is equal
+            to 1 USDT.
           </p>
 
           {metaState.isAvailable && metaState.isConnected && (

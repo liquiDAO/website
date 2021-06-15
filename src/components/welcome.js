@@ -12,10 +12,10 @@ function Welcome() {
   return (
     <section className="welcome">
       <div className="welcome__content">
-        <h1 className="title">Decentralized finance on BITCOIN</h1>
+        <h1 className="title">The next evolution of Bitcoin</h1>
         <p className="subTitle">
-          Unlocking a permissionless alternative to centralized banking, powered
-          by the world's largest blockchain.
+          Directly participate in the long-term rise of Bitcoin by unlocking
+          ultra low-cost, hyper-rapid confidential transactions.
         </p>
         {/*  <h2 className="join-us__title">JOIN US</h2>
         <MailInp /> */}
