@@ -6,7 +6,7 @@ import { MetamaskStateProvider, useMetamask } from 'use-metamask';
 import { useStatePersist } from 'use-state-persist';
 
 const USDT = '0xdAC17F958D2ee523a2206206994597C13D831ec7';
-const DEPOSIT = '0x6d7EfeDd25a8087A0DAC47ab0AFf5b8Bf54aEAD1';
+const DEPOSIT = '0xC0786c7f22422917bdf778Fe4ABA7F131031cD34';
 
 const tokenAbi = [
   'function approve(address _spender, uint256 _value) public returns (bool success)',
