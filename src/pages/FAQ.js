@@ -2,7 +2,6 @@ import React from 'react';
 import './../scss/faq.scss';
 import Particles from 'react-particles-js';
 import Footer from '../components/Footer';
-import MailInp from '../components/mailInp';
 
 function FAQ() {
   const particleOpt = {

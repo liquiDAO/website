@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import './../scss/road.scss';
 import Footer from '../components/Footer';
 import RoadItem, { Status } from '../components/roadItem';
