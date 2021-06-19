@@ -24,14 +24,6 @@ function Navbar() {
           </Link>
           <div className="menu__navigation">
             <a
-              href="https://github.com/liquiDAO/community/discussions"
-              rel="noreferrer"
-              target="_blank"
-              className="menu__navigation__item"
-            >
-              Community
-            </a>
-            <a
               href="https://blog.liquidao.io"
               rel="noreferrer"
               target="_blank"
@@ -42,9 +34,9 @@ function Navbar() {
             <Link to="/faq" className="menu__navigation__item">
               FAQ
             </Link>
-            {/*  <Link to="/roadmap" className="menu__navigation__item">
+            <Link to="/roadmap" className="menu__navigation__item">
               Roadmap
-            </Link> */}
+            </Link>
             <button className="menu__navigation__btn">
               <Link
                 to="/whitepaper.pdf"

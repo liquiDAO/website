@@ -42,6 +42,9 @@ function Footer() {
         <Link to="/faq" className="footer__navbar__link">
           FAQ
         </Link>
+        <Link to="/roadmap" className="footer__navbar__link">
+          Roadmap
+        </Link>
         <a
           href="http://2eubwcpqnbiucaohqedrpugx5l7yuphxdgg2ufnp7xontxpylcjmvnyd.onion"
           rel="noreferrer"
