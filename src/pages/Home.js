@@ -3,6 +3,8 @@ import './../scss/home.scss';
 // import Path1 from './../components/test.html'
 // import { ReactComponent as Path1 } from './../assets/images/liveBG1.svg';
 import Footer from '../components/Footer';
+import Partners from '../components/Partners';
+
 import Welcome from '../components/welcome';
 import MarketMaking from '../components/marketMaking';
 import Powered from '../components/power';
@@ -17,6 +19,7 @@ function Home() {
       <Powered />
       <Crosschain />
       <JoinUs />
+      <Partners />
       <Footer />
     </div>
   );

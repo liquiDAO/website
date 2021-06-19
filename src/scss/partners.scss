@@ -1,0 +1,9 @@
+.partners {
+  background: #160e78;
+  padding: 20px 95px;
+  box-sizing: border-box;
+  overflow: hidden;
+  @media (max-width: 810px) {
+    padding: 20px 15px;
+  }
+}

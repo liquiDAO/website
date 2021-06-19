@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './../scss/presale.scss';
 import { ethers } from 'ethers';
+import Footer from '../components/Footer';
 
 import { MetamaskStateProvider, useMetamask } from 'use-metamask';
 import { useStatePersist } from 'use-state-persist';
@@ -184,6 +185,7 @@ function Presale() {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

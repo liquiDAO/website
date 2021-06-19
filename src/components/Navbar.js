@@ -39,6 +39,9 @@ function Navbar() {
             >
               Blog
             </a>
+            <Link to="/faq" className="menu__navigation__item">
+              FAQ
+            </Link>
             {/*  <Link to="/roadmap" className="menu__navigation__item">
               Roadmap
             </Link> */}
