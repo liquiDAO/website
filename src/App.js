@@ -10,7 +10,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div className="page" id="page">
         <Navbar />
         <div id="routerContent">
