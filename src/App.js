@@ -1,5 +1,5 @@
 import ScrollToTop from './scrollToTop/ScrollToTop';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, HashRouter, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import FAQ from './pages/FAQ';
 import Road from './pages/Road';
@@ -10,22 +10,21 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="page" id="page">
         <Navbar />
         <div id="routerContent">
           <ScrollToTop />
           <Switch>
-            <Route path="/faq" render={() => <FAQ />}></Route>
-            <Route path="/roadmap" render={() => <Road />}></Route>
-            {/* <Route path="/pdf" render={() => <PDF />}></Route> */}
+            <Route exact path="/faq" render={() => <FAQ />}></Route>
+            <Route exact path="/roadmap" render={() => <Road />}></Route>
             <Route exact path="/" render={() => <Home />}></Route>
-            <Route exact path="/presale" render={() => <Presale />}></Route>
+            <Route exact path="/contribute" render={() => <Presale />}></Route>
             <Route path="*" component={NoMatch} />
           </Switch>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -23,14 +23,17 @@ function Navbar() {
             <img src={Logo} alt="logoImg" className="menu__logo" />
           </Link>
           <div className="menu__navigation">
-            <a
+            {/* <a
               href="https://blog.liquidao.io"
               rel="noreferrer"
               target="_blank"
               className="menu__navigation__item"
             >
-              Blog
-            </a>
+              Contribute
+            </a> */}
+            <Link to="/contribute" className="menu__navigation__item">
+              Contribute
+            </Link>
             <Link to="/faq" className="menu__navigation__item">
               FAQ
             </Link>
@@ -98,14 +101,17 @@ function Navbar() {
                   </a>
                 </li>
                 <li onClick={hamburgerOpen} className="menu-blok__item">
-                  <a
+                  <Link to="/contribute" className="menu-blok__link">
+                    Contribute
+                  </Link>
+                  {/* <a
                     href="https://blog.liquidao.io"
                     rel="noreferrer"
                     target="_blank"
                     className="menu-blok__link"
                   >
                     Blog
-                  </a>
+                  </a> */}
                 </li>
                 {/* <li onClick={hamburgerOpen} className="menu-blok__item">
                   <Link to="/roadmap" className="menu-blok__link">
