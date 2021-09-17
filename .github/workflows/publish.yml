@@ -12,7 +12,12 @@ jobs:
         with:
           node-version: 14
       - run: yarn install --frozen-lockfile
+      
       - run: yarn build
+        env:
+          PUBLIC_URL: https://liquidao.io
+
+      
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
